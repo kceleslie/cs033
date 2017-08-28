@@ -63,9 +63,10 @@ int main(int argc, char** argv) {
            int atoi(char *nptr)
        which is like Java's Integer.parseInt(). */
     int iteration = 0;
+
     if(argc >= 2)
     {
-        iteration = atoi(argv[1]);
+        iteration = atoi(argv[1]);  
     }
     if(iteration == 0)
         iteration = 5;
@@ -133,8 +134,9 @@ void do_life(int rows, int cols, int array[rows][cols], int steps) {
         new_array_table = temp_pointer;
         printf("-------------\n");
     }
-
+    
     print_array(rows, cols, current_array_table);
+    //print_array(rows, cols, new_ptr);
 
     // ***************************************
     // C arrays are always passed as pointers 
